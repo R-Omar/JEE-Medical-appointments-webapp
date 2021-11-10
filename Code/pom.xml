@@ -6,7 +6,7 @@
 
     <groupId>fr.dauphine</groupId>
     <artifactId>heal</artifactId>
-    <version>1.0-SNAPSHOT</version>
+    <version>1.0</version>
     <name>heal</name>
     <packaging>war</packaging>
 

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<persistence xmlns="http://xmlns.jcp.org/xml/ns/persistence"
+             xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+             xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_2.xsd"
+             version="2.2">
+
+<!--	To configure a server datasource-->
+<!--    <persistence-unit name="heal" transaction-type="JTA">-->
+<!--    	<jta-data-source>java:jboss/datasources/heal</jta-data-source>-->
+<!--    	<properties>-->
+<!--			<property name="javax.persistence.schema-generation.database.action" value="update" />-->
+<!--		</properties>-->
+<!--    </persistence-unit>-->
+
+<!--	To configure a datasource by properties-->
+	<persistence-unit name="heal" transaction-type="JTA">
+		<properties>
+			<property name="javax.persistence.jdbc.driver" value="com.mysql.jdbc.Driver"/>
+			<property name="javax.persistence.jdbc.url" value="jdbc:mysql://r6ze0q02l4me77k3.chr7pe7iynqr.eu-west-1.rds.amazonaws.com:3306/pz47tf96hyu6txjp?createDatabaseIfNotExist=true&amp;useSSL=false"/>
+			<property name="javax.persistence.jdbc.user" value="n92uo37yu3ze6l88"/>
+			<property name="javax.persistence.jdbc.password" value="kih5x9j47t3ixfa8"/>
+
+			<property name="javax.persistence.schema-generation.database.action" value="update" />
+			<property name="hibernate.dialect" value="org.hibernate.dialect.MySQL5Dialect" />
+		</properties>
+	</persistence-unit>
+</persistence>

@@ -6,7 +6,7 @@
 
 <!--	To configure a server datasource-->
 <!--    <persistence-unit name="heal" transaction-type="JTA">-->
-<!--    	<jta-data-source>java:jboss/datasources/heal100</jta-data-source>-->
+<!--    	<jta-data-source>java:jboss/datasources/heal</jta-data-source>-->
 <!--    	<properties>-->
 <!--			<property name="javax.persistence.schema-generation.database.action" value="update" />-->
 <!--		</properties>-->

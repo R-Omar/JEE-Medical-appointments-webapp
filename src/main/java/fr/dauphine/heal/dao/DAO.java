@@ -30,7 +30,6 @@ public class DAO {
 
 	public void persist(Object object) {
 		try {
-
 			em.persist(object);
 
 		} catch (Exception e) {

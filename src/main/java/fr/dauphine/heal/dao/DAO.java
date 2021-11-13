@@ -25,7 +25,7 @@ import fr.dauphine.heal.entities.Utilisateur;
 @Stateless
 @TransactionManagement(TransactionManagementType.CONTAINER)
 public class DAO {
-	@PersistenceContext(unitName = "heal")
+	@PersistenceContext(unitName="myDataBase")
 	EntityManager em;
 
 	public void persist(Object object) {

@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Hôte : 127.0.0.1
--- Généré le : sam. 13 nov. 2021 à 17:41
+-- Généré le : mer. 17 fév. 2021 à 03:03
 -- Version du serveur :  10.4.17-MariaDB
 -- Version de PHP : 8.0.0
 
@@ -43,10 +43,7 @@ INSERT INTO `agenda` (`id_agenda`, `actif`, `id_centre_medical`, `id_docteur`, `
 (1, b'1', 1, 2, 2),
 (2, b'0', 2, 2, 1),
 (3, b'1', 1, 5, 1),
-(4, b'0', 2, 5, 2),
-(5, b'1', 3, 7, 6),
-(6, b'1', 1, 7, 3),
-(7, b'0', 6, 7, 7);
+(4, b'0', 2, 5, 2);
 
 -- --------------------------------------------------------
 
@@ -68,10 +65,7 @@ INSERT INTO `centre_docteur_specialite` (`id_docteur`, `id_specialite`, `id_cent
 (2, 1, 2),
 (5, 1, 1),
 (2, 2, 1),
-(5, 2, 2),
-(7, 3, 1),
-(7, 6, 3),
-(7, 7, 6);
+(5, 2, 2);
 
 -- --------------------------------------------------------
 
@@ -118,8 +112,7 @@ CREATE TABLE `docteur` (
 
 INSERT INTO `docteur` (`adresse`, `nom`, `prenom`, `telephone`, `id_docteur`) VALUES
 ('1 Boulevard Jourdan', 'Dupont', 'Pierre', '0660254563', 2),
-('1 Boulevard Jourdan', 'Martin', 'Alain', '0660254563', 5),
-('1 Boulevard Jourdan', 'monroq', 'alain', '0660254563', 7);
+('1 Boulevard Jourdan', 'Martin', 'Alan', '0660254563', 5);
 
 -- --------------------------------------------------------
 
@@ -142,8 +135,7 @@ CREATE TABLE `patient` (
 --
 
 INSERT INTO `patient` (`adresse`, `anneeDeNaissance`, `compte_actif`, `nom`, `prenom`, `telephone`, `id_patient`) VALUES
-('Paris 14', 1990, b'1', 'Dubois', 'Nicholas', '0660254563', 4),
-('1 Boulevard Jourdan', 1993, b'1', 'Martin', 'Pierre', '0660254563', 6);
+('Paris 14', 1990, b'1', 'Dubois', 'Nicholas', '0660254563', 4);
 
 -- --------------------------------------------------------
 
@@ -164,19 +156,21 @@ CREATE TABLE `rendez_vous` (
 --
 
 INSERT INTO `rendez_vous` (`id_rendez_vous`, `date`, `status`, `id_agenda`, `id_patient`) VALUES
-(16, '2021-02-25 08:00:00', 'disponible', 5, NULL),
-(17, '2021-02-25 09:00:00', 'disponible', 5, NULL),
-(18, '2021-02-25 08:30:00', 'disponible', 5, NULL),
-(19, '2021-02-25 09:30:00', 'disponible', 5, NULL),
-(20, '2021-02-25 10:00:00', 'indisponible', 5, NULL),
-(21, '2021-02-25 10:30:00', 'indisponible', 5, NULL),
-(22, '2021-02-25 11:00:00', 'indisponible', 5, NULL),
-(23, '2021-02-25 11:30:00', 'disponible', 6, NULL),
-(24, '2021-02-25 12:00:00', 'disponible', 6, NULL),
-(25, '2021-02-25 12:30:00', 'disponible', 6, NULL),
-(26, '2021-02-25 13:00:00', 'indisponible', 6, NULL),
-(27, '2021-02-25 13:30:00', 'indisponible', 6, NULL),
-(28, '2021-02-25 14:00:00', 'indisponible', 6, NULL);
+(1, '2021-02-16 08:00:00', 'disponible', 1, NULL),
+(2, '2021-02-16 08:30:00', 'disponible', 1, NULL),
+(3, '2021-02-16 09:00:00', 'indisponible', 1, NULL),
+(4, '2021-02-16 09:30:00', 'disponible', 1, NULL),
+(5, '2021-02-16 10:00:00', 'disponible', 1, NULL),
+(6, '2021-02-16 10:30:00', 'disponible', 2, NULL),
+(7, '2021-02-16 11:00:00', 'disponible', 2, NULL),
+(8, '2021-02-17 08:00:00', 'disponible', 2, NULL),
+(9, '2021-02-17 08:30:00', 'disponible', 2, NULL),
+(10, '2021-02-17 08:00:00', 'disponible', 3, NULL),
+(11, '2021-02-17 08:30:00', 'reservé', 3, 4),
+(12, '2021-02-17 09:00:00', 'disponible', 3, NULL),
+(13, '2021-02-17 09:30:00', 'indisponible', 3, NULL),
+(14, '2021-02-17 10:00:00', 'indisponible', 3, NULL),
+(15, '2021-02-17 10:30:00', 'indisponible', 3, NULL);
 
 -- --------------------------------------------------------
 
@@ -235,10 +229,8 @@ CREATE TABLE `utilisateur` (
 INSERT INTO `utilisateur` (`id_utilsateur`, `email`, `mot_de_passe`, `type_utilisateur`) VALUES
 (1, 'admin@heal.com', 'admin', 'admin'),
 (2, 'pierre_dupont@gmail.com', '123456', 'docteur'),
-(4, 'nicholas_dubois@gmail.com', '123456', 'patient'),
-(5, 'alain_martin@gmail.com', '123456', 'docteur'),
-(6, 'pierre_martin@gmail.com', '123456', 'patient'),
-(7, 'alain.monroq@gmail.com', '123456', 'docteur');
+(4, 'nicholas@gmail.com', '123456789', 'patient'),
+(5, 'alain@gmail.com', '123456', 'docteur');
 
 --
 -- Index pour les tables déchargées
@@ -316,7 +308,7 @@ ALTER TABLE `utilisateur`
 -- AUTO_INCREMENT pour la table `agenda`
 --
 ALTER TABLE `agenda`
-  MODIFY `id_agenda` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
+  MODIFY `id_agenda` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
 -- AUTO_INCREMENT pour la table `centre_medical`
@@ -328,7 +320,7 @@ ALTER TABLE `centre_medical`
 -- AUTO_INCREMENT pour la table `rendez_vous`
 --
 ALTER TABLE `rendez_vous`
-  MODIFY `id_rendez_vous` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=29;
+  MODIFY `id_rendez_vous` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=16;
 
 --
 -- AUTO_INCREMENT pour la table `specialite`
@@ -340,7 +332,7 @@ ALTER TABLE `specialite`
 -- AUTO_INCREMENT pour la table `utilisateur`
 --
 ALTER TABLE `utilisateur`
-  MODIFY `id_utilsateur` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
+  MODIFY `id_utilsateur` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 
 --
 -- Contraintes pour les tables déchargées

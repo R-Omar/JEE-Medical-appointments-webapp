@@ -1,12 +1,9 @@
 package fr.dauphine.heal.entities;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
+import javax.persistence.*;
 
 @Entity
+@Table(name = "specialite")
 public class Specialite {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)

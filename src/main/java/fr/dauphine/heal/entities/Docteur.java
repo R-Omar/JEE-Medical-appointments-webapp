@@ -4,17 +4,10 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-import javax.persistence.CascadeType;
-import javax.persistence.Entity;
-import javax.persistence.FetchType;
-import javax.persistence.JoinColumn;
-import javax.persistence.JoinTable;
-import javax.persistence.ManyToMany;
-import javax.persistence.MapKeyJoinColumn;
-import javax.persistence.OneToMany;
-import javax.persistence.PrimaryKeyJoinColumn;
+import javax.persistence.*;
 
 @Entity
+@Table(name = "docteur")
 @PrimaryKeyJoinColumn(name = "id_docteur")
 public class Docteur extends Utilisateur {
 
@@ -24,7 +17,7 @@ public class Docteur extends Utilisateur {
 	private String adresse;
 
 	@ManyToMany(fetch = FetchType.EAGER)
-	@JoinTable(name = "Centre_Docteur_Specialite", joinColumns = @JoinColumn(name = "id_docteur"), inverseJoinColumns = @JoinColumn(name = "id_specialite"))
+	@JoinTable(name = "centre_docteur_specialite", joinColumns = @JoinColumn(name = "id_docteur"), inverseJoinColumns = @JoinColumn(name = "id_specialite"))
 	@MapKeyJoinColumn(name = "id_centre_medicale")
 	private Map<CentreMedical, Specialite> Centre_Specialite = new HashMap<CentreMedical, Specialite>();
 

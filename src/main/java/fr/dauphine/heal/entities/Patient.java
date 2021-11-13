@@ -3,8 +3,10 @@ package fr.dauphine.heal.entities;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.PrimaryKeyJoinColumn;
+import javax.persistence.Table;
 
 @Entity
+@Table(name = "patient")
 @PrimaryKeyJoinColumn(name = "id_patient")
 public class Patient extends Utilisateur {
 	private String nom;

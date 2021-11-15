@@ -17,7 +17,7 @@ Some accounts for testing, please to not change emails or passwords on the live 
 | patient | patient@gmail.com   | 123456   |
 | doctor  | doctor@gmail.com    | 123456   |
 
-## Architecture, technologies and libraires
+## Architecture, technologies and libraries
 - Java (Jakarta) EE APIs (Servlet, JSP, EJB, JPA, JTA)
 - JSTL, gson
 - Html, CSS, Javascript, Bootstrap, jQuery

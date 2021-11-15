@@ -1,21 +1,21 @@
-<%@ page language="java" contentType="text/html; charset=ISO-8859-1" pageEncoding="UTF-8"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="UTF-8">
-<title>Mes rendez-vous</title>
-<title>Réserver un rendez-vous</title>
-<link rel="stylesheet" href="inc/css/animate.css">
-<link rel="stylesheet" href="inc/css/icomoon.css">
-<link rel="stylesheet" href="inc/css/bootstrap.css">
-<link rel="stylesheet" href="inc/css/magnific-popup.css">
-<link rel="stylesheet" href="inc/css/owl.carousel.min.css">
-<link rel="stylesheet" href="inc/css/owl.theme.default.min.css">
-<link rel="stylesheet" href="inc/css/flexslider.css">
-<link rel="stylesheet" href="inc/css/style.css">
-<link rel="stylesheet" href="inc/fonts/flaticon/font/flaticon.css">
-<script src="inc/js/modernizr-2.6.2.min.js"></script>
+	<meta charset="UTF-8">
+	<title>Mes rendez-vous</title>
+	<link rel="icon" type="image/x-icon" href="inc/images/icon.ico">
+	<link rel="stylesheet" href="inc/css/animate.css">
+	<link rel="stylesheet" href="inc/css/icomoon.css">
+	<link rel="stylesheet" href="inc/css/bootstrap.css">
+	<link rel="stylesheet" href="inc/css/magnific-popup.css">
+	<link rel="stylesheet" href="inc/css/owl.carousel.min.css">
+	<link rel="stylesheet" href="inc/css/owl.theme.default.min.css">
+	<link rel="stylesheet" href="inc/css/flexslider.css">
+	<link rel="stylesheet" href="inc/css/style.css">
+	<link rel="stylesheet" href="inc/fonts/flaticon/font/flaticon.css">
+	<script src="inc/js/modernizr-2.6.2.min.js"></script>
 
 </head>
 <body>

@@ -5,6 +5,7 @@
 <head>
 <meta charset="UTF-8">
 <title>Ajouter Docteur</title>
+	<link rel="icon" type="image/x-icon" href="inc/images/icon.ico">
 <script type="text/javascript" src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
 <link rel="stylesheet" href="inc/css/animate.css">
 <link rel="stylesheet" href="inc/css/icomoon.css">

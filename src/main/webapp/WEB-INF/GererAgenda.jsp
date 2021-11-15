@@ -4,23 +4,25 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset='utf-8' />
-<script type="text/javascript" src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
-<link href='inc/css/mainFullCalendar.css' rel='stylesheet' />
-<link href='https://use.fontawesome.com/releases/v5.0.6/css/all.css' rel='stylesheet'>
-<script src='inc/js/mainFullCalendar.js'></script>
-<script src='inc/js/locales-all.js'></script>
-<script src='inc/js/theme-chooser.js'></script>
-<link rel="stylesheet" href="inc/css/animate.css">
-<link rel="stylesheet" href="inc/css/icomoon.css">
-<link rel="stylesheet" href="inc/css/bootstrap.css">
-<link rel="stylesheet" href="inc/css/magnific-popup.css">
-<link rel="stylesheet" href="inc/css/owl.carousel.min.css">
-<link rel="stylesheet" href="inc/css/owl.theme.default.min.css">
-<link rel="stylesheet" href="inc/css/flexslider.css">
-<link rel="stylesheet" href="inc/css/style.css">
-<link rel="stylesheet" href="inc/fonts/flaticon/font/flaticon.css">
-<script src="inc/js/modernizr-2.6.2.min.js"></script>
+	<meta charset='utf-8' />
+	<title>Gérer Agenda</title>
+	<link rel="icon" type="image/x-icon" href="inc/images/icon.ico">
+	<script type="text/javascript" src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+	<link href='inc/css/mainFullCalendar.css' rel='stylesheet' />
+	<link href='https://use.fontawesome.com/releases/v5.0.6/css/all.css' rel='stylesheet'>
+	<script src='inc/js/mainFullCalendar.js'></script>
+	<script src='inc/js/locales-all.js'></script>
+	<script src='inc/js/theme-chooser.js'></script>
+	<link rel="stylesheet" href="inc/css/animate.css">
+	<link rel="stylesheet" href="inc/css/icomoon.css">
+	<link rel="stylesheet" href="inc/css/bootstrap.css">
+	<link rel="stylesheet" href="inc/css/magnific-popup.css">
+	<link rel="stylesheet" href="inc/css/owl.carousel.min.css">
+	<link rel="stylesheet" href="inc/css/owl.theme.default.min.css">
+	<link rel="stylesheet" href="inc/css/flexslider.css">
+	<link rel="stylesheet" href="inc/css/style.css">
+	<link rel="stylesheet" href="inc/fonts/flaticon/font/flaticon.css">
+	<script src="inc/js/modernizr-2.6.2.min.js"></script>
 
 <script>
 	document

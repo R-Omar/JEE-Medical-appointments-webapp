@@ -3,19 +3,20 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="UTF-8">
-<title>Modifier les informations de mon compte</title>
-<script type="text/javascript" src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
-<link rel="stylesheet" href="inc/css/animate.css">
-<link rel="stylesheet" href="inc/css/icomoon.css">
-<link rel="stylesheet" href="inc/css/bootstrap.css">
-<link rel="stylesheet" href="inc/css/magnific-popup.css">
-<link rel="stylesheet" href="inc/css/owl.carousel.min.css">
-<link rel="stylesheet" href="inc/css/owl.theme.default.min.css">
-<link rel="stylesheet" href="inc/css/flexslider.css">
-<link rel="stylesheet" href="inc/css/style.css">
-<link rel="stylesheet" href="inc/fonts/flaticon/font/flaticon.css">
-<script src="inc/js/modernizr-2.6.2.min.js"></script>
+	<meta charset="UTF-8">
+	<title>Modifier les informations du compte</title>
+	<link rel="icon" type="image/x-icon" href="inc/images/icon.ico">
+	<script type="text/javascript" src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+	<link rel="stylesheet" href="inc/css/animate.css">
+	<link rel="stylesheet" href="inc/css/icomoon.css">
+	<link rel="stylesheet" href="inc/css/bootstrap.css">
+	<link rel="stylesheet" href="inc/css/magnific-popup.css">
+	<link rel="stylesheet" href="inc/css/owl.carousel.min.css">
+	<link rel="stylesheet" href="inc/css/owl.theme.default.min.css">
+	<link rel="stylesheet" href="inc/css/flexslider.css">
+	<link rel="stylesheet" href="inc/css/style.css">
+	<link rel="stylesheet" href="inc/fonts/flaticon/font/flaticon.css">
+	<script src="inc/js/modernizr-2.6.2.min.js"></script>
 
 </head>
 <body class="ajouter">

@@ -1,22 +1,23 @@
-<%@ page language="java" contentType="text/html; charset=ISO-8859-1" pageEncoding="ISO-8859-1"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 
 <html>
 <head>
-<meta charset="utf-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<title>Heal</title>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<link rel="icon" type="image/x-icon" href="inc/images/icon.ico">
+	<title>Heal</title>
 
-<link rel="stylesheet" href="inc/css/animate.css">
-<link rel="stylesheet" href="inc/css/icomoon.css">
-<link rel="stylesheet" href="inc/css/bootstrap.css">
-<link rel="stylesheet" href="inc/css/magnific-popup.css">
-<link rel="stylesheet" href="inc/css/owl.carousel.min.css">
-<link rel="stylesheet" href="inc/css/owl.theme.default.min.css">
-<link rel="stylesheet" href="inc/css/flexslider.css">
-<link rel="stylesheet" href="inc/css/style.css">
-<link rel="stylesheet" href="inc/fonts/flaticon/font/flaticon.css">
-<script src="inc/js/modernizr-2.6.2.min.js"></script>
+	<link rel="stylesheet" href="inc/css/animate.css">
+	<link rel="stylesheet" href="inc/css/icomoon.css">
+	<link rel="stylesheet" href="inc/css/bootstrap.css">
+	<link rel="stylesheet" href="inc/css/magnific-popup.css">
+	<link rel="stylesheet" href="inc/css/owl.carousel.min.css">
+	<link rel="stylesheet" href="inc/css/owl.theme.default.min.css">
+	<link rel="stylesheet" href="inc/css/flexslider.css">
+	<link rel="stylesheet" href="inc/css/style.css">
+	<link rel="stylesheet" href="inc/fonts/flaticon/font/flaticon.css">
+	<script src="inc/js/modernizr-2.6.2.min.js"></script>
 </head>
 
 <body class="acceuil">
@@ -38,18 +39,18 @@
 										<strong>Heal</strong>
 									</h1>
 									<c:if test="${empty utilisateur}">
-										<h2 class="doc-holder">Trouvez et réservez un rendez-vous médical</h2>
+										<h2 class="doc-holder">Trouver et rÃ©server un rendez-vous mÃ©dical</h2>
 										<p>
-											<a class="btn btn-primary btn-lg" href="${pageContext.request.contextPath}/Connexion">Réserver un
+											<a class="btn btn-primary btn-lg" href="${pageContext.request.contextPath}/Connexion">RÃ©server un
 												rendez-vous</a>
 										</p>
 									</c:if>
 
 									<c:if test="${utilisateur.typeUtilisateur =='patient'}">
-										<h2 class="doc-holder">Trouvez et réservez un rendez-vous médical</h2>
+										<h2 class="doc-holder">Trouver et rÃ©server un rendez-vous mÃ©dical</h2>
 										<h2 class="doc-holder">Bonjour ${utilisateur.prenom}</h2>
 										<p>
-											<a class="btn btn-primary btn-lg" href="${pageContext.request.contextPath}/RechercherRendezVous">Réserver
+											<a class="btn btn-primary btn-lg" href="${pageContext.request.contextPath}/RechercherRendezVous">RÃ©server
 												un rendez-vous</a>
 										</p>
 									</c:if>

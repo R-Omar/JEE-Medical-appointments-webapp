@@ -4,17 +4,18 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Gérer mon compte</title>
-<link rel="stylesheet" href="inc/css/animate.css">
-<link rel="stylesheet" href="inc/css/icomoon.css">
-<link rel="stylesheet" href="inc/css/bootstrap.css">
-<link rel="stylesheet" href="inc/css/magnific-popup.css">
-<link rel="stylesheet" href="inc/css/owl.carousel.min.css">
-<link rel="stylesheet" href="inc/css/owl.theme.default.min.css">
-<link rel="stylesheet" href="inc/css/flexslider.css">
-<link rel="stylesheet" href="inc/css/style.css">
-<link rel="stylesheet" href="inc/fonts/flaticon/font/flaticon.css">
-<script src="inc/js/modernizr-2.6.2.min.js"></script>
+	<title>Gérer mon compte</title>
+	<link rel="icon" type="image/x-icon" href="inc/images/icon.ico">
+	<link rel="stylesheet" href="inc/css/animate.css">
+	<link rel="stylesheet" href="inc/css/icomoon.css">
+	<link rel="stylesheet" href="inc/css/bootstrap.css">
+	<link rel="stylesheet" href="inc/css/magnific-popup.css">
+	<link rel="stylesheet" href="inc/css/owl.carousel.min.css">
+	<link rel="stylesheet" href="inc/css/owl.theme.default.min.css">
+	<link rel="stylesheet" href="inc/css/flexslider.css">
+	<link rel="stylesheet" href="inc/css/style.css">
+	<link rel="stylesheet" href="inc/fonts/flaticon/font/flaticon.css">
+	<script src="inc/js/modernizr-2.6.2.min.js"></script>
 
 </head>
 <body>

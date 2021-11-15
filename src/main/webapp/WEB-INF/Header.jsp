@@ -1,4 +1,10 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
+
+<div class="alert alert-warning message-header">
+	This is only a demo and not a working site. The code source can be found at
+	<a href="https://github.com/R-Omar/JEE-medical-appointments-webapp" target="_blank">this GitHub repo</a>
+</div>
 
 <nav class="colorlib-nav" role="navigation">
 	<div class="menu-wrap">
@@ -30,17 +36,15 @@
 							</c:if>
 							
 							<c:if test="${!empty utilisateur.typeUtilisateur}">
-								<li><a href="${pageContext.request.contextPath}/Deconnexion">Se déconnecter</a></li>
+								<li><a href="${pageContext.request.contextPath}/Deconnexion">Se dÃ©connecter</a></li>
 							</c:if>
 						</ul>
 					</div>
 				</div>
-				
-				
 				<c:if test="${empty utilisateur }">
 					<div class="col-md-4">
 						<p class="btn-cta">
-							<a href="${pageContext.request.contextPath}/Connexion"><span>Réserver un rendez-vous <i
+							<a href="${pageContext.request.contextPath}/Connexion"><span>RÃ©server un rendez-vous <i
 									class="icon-calendar3"></i></span></a>
 						</p>
 					</div>
@@ -49,7 +53,7 @@
 				<c:if test="${utilisateur.typeUtilisateur == 'patient' }">
 					<div class="col-md-4">
 						<p class="btn-cta">
-							<a href="${pageContext.request.contextPath}/RechercherRendezVous"><span>Réserver un rendez-vous <i
+							<a href="${pageContext.request.contextPath}/RechercherRendezVous"><span>RÃ©server un rendez-vous <i
 									class="icon-calendar3"></i></span></a>
 						</p>
 					</div>

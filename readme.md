@@ -5,7 +5,7 @@ A Java EE (Jakarta EE) web application to manage appointments in several medical
 
 3 user profiles:
 - Administrator: the administrators has the right to create accounts for doctors and associate them with one or more medical centers.
-- Doctor: These are doctors who work in one or more medical centers. A doctor can view/update his disponiblities in a medical center, consult his appointments and cancel an appointment.
+- Doctor: These are doctors who work in one or more medical centers. A doctor can view/update his availability in a medical center, consult his appointments and cancel an appointment.
 - Patient: a person registered with the site. He can create, modify and delete their account, make an appointment with one of the doctors at one of the medical centers, view their appointments and cancel them.
 
 ## Live Demo 

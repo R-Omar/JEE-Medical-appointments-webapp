@@ -28,5 +28,5 @@ Some accounts for testing, please to not change emails or passwords on the live 
 1. Clone the project.
 2. Install a Java EE based server application (preferably wildfly).
 3. Create a SQL database locally and populate it using the heal.sql script which can be found in the directory Database.
-4. Replace the database connexion parameters with the connexion parmaters of your local database in the file persistence.xml which can be found in the directory src\main\resources\META-INF.
+4. Replace the database connexion parameters with the connexion parameters of your local database in the file persistence.xml which can be found in the directory src\main\resources\META-INF.
 5. Build the project and deploy the generated WAR in your running application server.
